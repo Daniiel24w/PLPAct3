@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Eventos en JavaScript</h2>
+    
+    <button id="boton-saludo">Boton para realizar el evento</button>
+
+    <!-- Seccion del codigo de JavaScript -->
+        <script>
+            // 1. Seleccionamos el elemento del DOM a través de su ID
+            const miBoton = document.getElementById('boton-saludo');
+
+            // 2. Definimos la función que reaccionará al evento (conocida como Event Handler)
+            function saludar() {
+                console.log("El evento 'click' ha sido detectado en consola");
+                alert("Hola hiciste clic en el botón. ");
+            }
+
+            // 3. Registramos el "escuchador de eventos" (Event Listener)
+            miBoton.addEventListener('click', saludar);
+        </script>
+    <!-- Seccion del codigo de JavaScript -->
+</body>
+</html>
